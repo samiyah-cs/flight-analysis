@@ -49,3 +49,19 @@ plt.tight_layout()
 chart_path = 'airline_delay_analysis.png'
 plt.savefig(chart_path)
 print(f"Success! Visual chart saved as '{chart_path}'")
+
+# =========================================================
+# [The New Second Chart: Delay by Month]
+# =========================================================
+monthly_delay = flights_cleaned.groupby("MONTH")["DEPARTURE_DELAY"].mean()
+
+plt.figure(figsize=(10, 5))
+monthly_delay.plot(kind="line", marker="o", color='coral', linewidth=2, markersize=6)
+plt.title("Average Departure Delay by Month", fontsize=14, fontweight='bold')
+plt.xlabel("Month", fontsize=12)
+plt.ylabel("Average Delay (Minutes)", fontsize=12)
+plt.grid(True, linestyle='--', alpha=0.6)
+plt.tight_layout()
+plt.savefig("monthly_delay_analysis.png")
+plt.close()
+print("Success! Monthly delay chart saved.")
