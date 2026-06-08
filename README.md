@@ -23,7 +23,7 @@ The execution layer automatically cleans raw data inputs and exports publication
 * Data cleaning removed missing delay records and improved analysis reliability.
 
 ### Monthly Delay Trend
-![Average Departure Delay by Month](monthly_delay_analysis.png)
+[Average Departure Delay by Month](monthly_delay_analysis.png)
 
 ## Deployment & Execution
 1. Clone this repository to your local environment.
