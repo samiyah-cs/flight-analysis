@@ -1,32 +1,96 @@
-# Flight Delays & Operations Predictive Data Analysis
+Flight Delays & Operations Predictive Data Analysis
 
-## Project Overview
-This project establishes an automated data engineering and analytics pipeline to extract, clean, and analyze large-scale commercial flight performance datasets from the **U.S. Department of Transportation (DOT)** via Kaggle. The objective is to derive operational intelligence regarding airline efficiencies, monthly bottleneck trends, and mitigation strategies for flight delays.
+1. Project Overview
 
-## Core Skills & Tech Stack Demonstrated
-* **Python Engineering:** Built a clean, production-ready scripting structure.
-* **Data Automation:** Configured `kagglehub` to handle seamless dynamic retrieval of heavy open-source datasets.
-* **Advanced Data Cleaning (Pandas):** Handled missing observations (`NaN` records), resolved alignment anomalies, and performed structural filtering on millions of data rows efficiently.
-* **Business Intelligence & Visualization:** Leveraged `matplotlib` to convert numerical operational metrics into highly interpretable statistical charts.
+This project builds an end-to-end data analysis pipeline to investigate commercial flight performance using real-world datasets from the U.S. Department of Transportation (DOT) via Kaggle.
 
-## Analytical Insights Extracted
-1. **Carrier Operational Performance:** Aggregated and computed exact mean departure delays to rank airline efficiency.
-2. **Temporal Trend Analysis:** Evaluated month-over-month operational fluctuations to pinpoint high-risk seasonal delay surges (e.g., peak summer and winter bottlenecks).
+The goal is to transform raw aviation data into actionable operational insights that help understand airline delay behavior, seasonal congestion patterns, and overall efficiency trends.
 
-## Visualized Findings
-The execution layer automatically cleans raw data inputs and exports publication-grade visual charts (`airline_delay_analysis.png`), providing stakeholders with an immediate intuitive breakdown of carrier delay distribution.
+⸻
 
-## Key Findings
-* **Airline WN** recorded the highest average departure delay.
-* Flight cancellations represented a significant operational challenge.
-* Delay patterns varied considerably across airlines.
-* Data cleaning removed missing delay records and improved analysis reliability.
+2. Problem Statement
 
-### Monthly Delay Trend
-[Average Departure Delay by Month](monthly_delay_analysis.png)
+Flight delays and cancellations represent a major challenge in the aviation industry, impacting:
 
-## Deployment & Execution
-1. Clone this repository to your local environment.
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
+* Operational efficiency
+* Customer satisfaction
+* Airline profitability
+
+This project aims to analyze historical flight data to identify:
+
+* Which airlines perform better operationally
+* When delays are most likely to occur
+* What patterns exist in cancellations and delays
+
+⸻
+
+3. Dataset
+
+* Source: Kaggle (U.S. Department of Transportation - DOT)
+* Scale: Large-scale multi-million record dataset
+* Type: Structured tabular aviation data
+
+⸻
+
+4. Methodology
+
+Data Engineering Pipeline
+
+* Automated dataset retrieval using kagglehub
+* Data preprocessing and cleaning using pandas
+* Handling missing values and inconsistent records
+* Filtering and structuring large-scale datasets
+
+Analysis Techniques
+
+* Aggregation of airline delay statistics
+* Monthly trend analysis
+* Comparative carrier performance evaluation
+
+⸻
+
+5. Tools & Technologies
+
+* Python
+* Pandas
+* Matplotlib
+* KaggleHub
+* Data Cleaning & Transformation Techniques
+
+⸻
+
+6. Key Insights
+
+* Airline performance varies significantly across carriers.
+* Certain airlines consistently experience higher average departure delays.
+* Delay frequency increases during peak seasonal travel periods.
+* Data cleaning significantly improved reliability of operational insights.
+
+⸻
+
+7. Visualizations
+
+* Average Departure Delay by Airline
+* Monthly Delay Trend Analysis
+
+  ⸻
+
+8. Key Output
+
+* Cleaned and structured dataset ready for analysis
+* Publication-quality visual insights
+* Automated pipeline for reproducible results
+
+⸻
+
+9. Conclusion
+
+This analysis demonstrates how raw aviation data can be transformed into meaningful operational intelligence that supports decision-making in airline performance optimization.
+
+⸻
+
+10. Future Improvements
+
+* Predictive modeling for delay forecasting (Machine Learning)
+* Real-time flight tracking integration
+* Root cause analysis of delays (weather, airport congestion, etc.)
